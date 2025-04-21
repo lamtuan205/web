@@ -2,214 +2,108 @@
 <html lang="vi">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop Bán Đồ Điện Tử</title>
-  <link rel="stylesheet" href="trangchu.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="đăngnhập.css">
+
+</head>
+
 </head>
 
 <body>
-  <div class="container">
-    <!-- Header -->
-    <header class="main-header">
-      <div><h2 class="logom"><b>DTB SHOP</b></h2></div>
-      <nav class="main-nav"><ul>
-          <li><a href="#">Cửa hàng</a></li>
-          <li><a href="#">Ưu Đãi</a></li>
-          <li><a href="#">Giải trí</a></li>
-          <li><a href="#">Tin tức</a></li>
-          <li><a href="#">Phụ kiện</a></li>
-        </ul>
-      </nav>
+    <div class="container">
+        <!-- Header -->
+        <header class="main-header">
+            <a href="../trang chính/trang chính.html" class="logo"><img src="anhcuatuan/logo.jpg" alt=""></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Ưu Đãi</a></li>
+                    <li><a href="#">Di động</a></li>
+                    <li><a href="#">TV & AV</a></li>
+                    <li><a href="#">Gia Dụng</a></li>
+                    <li><a href="#">IT</a></li>
+                    <li><a href="#">Máy ảnh</a></li>
+                    <li><a href="#">Đồng hồ</a></li>
+                    <li><a href="#">Tai nghe</a></li>
+                </ul>
+            </nav>
 
-      <div class="header-right">
-        <a href="#" class="support">Hỗ Trợ</a>
-        <a href="#" class="business">For Business</a>
+            <div class="header-right">
+                <a href="../tuấn/Hỗ trợ.html" class="support">Hỗ Trợ</a>
+                <a href="#" class="business">For Business</a>
 
-        <div class="search-box">
-          <input type="text" placeholder="Tìm kiếm">
-          <i class="icon-search">🔍</i>
-        </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Tìm kiếm">
+                    <i class="icon-search">🔍</i>
+                </div>
 
-        <div class="giohang">
-          <a href=""><img src="anhhtml/shopping-cart.png" alt=""></a>
-        </div>
-        <a href="../tuấn/đăng nhập.html" class="business">Đăng nhập</a>
-        
+                <div class="giohang">
+                    <a href=""><img src="anhcuatuan/shopping-cart.png" alt=""></a>
+                </div>
+                <a href="../tuấn/đăng nhập.html" class="login-btn">Đăng nhập</a>
+            </div>
+        </header>
 
-    </header>
+        <body>
+            <!-- Form đăng nhập -->
+            <div class="login-container">
+                <h2>Đăng nhập với</h2>
 
-    <!-- trình chiếu hình ảnh-->
-    <div class="slider-container">
-      <div class="slider">
-        <img src="anhhtml/test2.webp" alt="Image 1" class="slide">
-        <img src="anhhtml/test3.webp" alt="Image 3" class="slide">
-      </div>
-    </div>
+                <!-- Mạng xã hội trước -->
+                <div class="social-login">
+                    <a href="#" class="google-btn">Đăng nhập với Google</a>
+                    <a href="#" class="facebook-btn">Đăng nhập với Facebook</a>
+                    <p>______________hoặc______________</p>
+                </div>
 
-    <script src="script.js"></script>
-    <!-- Categories -->
-    <nav class="categories">
-      <button>Điện thoại</button>
-      <button>Laptop</button>
-      <button>Máy tính</button>
-      <div >
-        <a href="tivi.html" class="login-btn"> <button>Tivi</button></a>
-      </div>
-      <div >
-        <a href="mayanh.html" class="login-btn"> <button>Máy ảnh</button></a>
-      </div>
-      <div >
-        <a href="dongho.html" class="login-btn"> <button>Đồng hồ</button></a>
-      </div>
-      <button>Loa</button>
-      <button>Tablet</button>
-      <button>Tai nghe</button>
-    </nav>
+                <!-- Form tài khoản -->
+                <form>
+                    <label for="username">Tên đăng nhập</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" id="password" name="password" required><br>
+                    <br><a href="../tuấn/đăng ký.html" class="login-btn">Tạo tài khoản</a>
 
-    <div class="sanpham">
-      <h3>
-        <center>Sản phẩm nổi bật</center>
-      </h3>
-    </div><br>
-    <!-- Main layout -->
-    <div class="product-contaniner">
+                    <a href="../trang chính/trang chính.html" class="form-submit">Đăng nhập</a>
+                </form>
+            </div>
 
-        <div class="product-card">
-            <span class="discount-label">Giảm 45%</span>
-          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s25-ultra_3__3.png" alt="SP 1">
-          <h3> Sámung Galaxy S25 UItra </h3>
-          <p class="">27.790.000đ <span class=" sale"><del>33.990.000đ </del></span></p>
-          <br> <a href=""><button class="button">Xem</button></a>
-        </div>
-         
-        <div class="product-card">
-            <span class="discount-label">Giảm 45%</span>
-          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/m/smart_band_1__1.png" alt="SP 1">
-          <h3> iPhone 13 128GB </h3>
-          <p class="">11.390.000đ <span class=" sale"><del>17.990.000đ </del></span></p>
-          <br> <a href=""><button class="button">Xem</button></a>
-        </div>
-        
-        <div class="product-card">
-            <span class="discount-label">Giảm 45%</span>
-          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_3__3_19.png" alt="SP 1">
-          <h3> Laptop Gaming Acer Nitro V</h3>
-          <p class="">17.090.000đ<span class=" sale"><del>21.390.000đ </del></span></p>
-          <br> <a href=""><button class="button">Xem</button></a>
-        </div>
-        
-        <div class="product-card">
-            <span class="discount-label">Giảm 45%</span>
-          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/m/a/macbook_7_1.png" alt="SP 1">
-          <h3> Mac mini M4 2024 </h3>
-          <p class="">14.790.000đ <span class=" sale"><del>15.090.000đ </del></span></p>
-          <br> <a href=""><button class="button">Xem</button></a>
-        </div>
-        
-        <div class="product-card">
-            <span class="discount-label">Giảm 45%</span>
-          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/f/r/frame_195_26_.jpg" alt="SP 1">
-          <h3>Màn hình Gaming LG UItraGear</h3>
-          <p class="">2.790.000đ <span class=" sale"><del>3.990.000đ </del></span></p>
-          <br> <a href=""><button class="button">Xem</button></a>
-        </div>
-        
-        <div class="product-card">
-            <span class="discount-label">Giảm 45%</span>
-          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/ipad-a16-11-inch_10_.jpg" alt="SP 1">
-          <h3> iPad Gen10 10.9 inch 2022 Wifi 64GB</h3>
-          <p class="">11.990.000đ <span class=" sale"><del>13.890.000đ </del></span></p>
-          <br> <a href=""><button class="button">Xem</button></a>
-        </div>
-        
-        <div class="product-card">
-            <span class="discount-label">Giảm 45%</span>
-          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-buds-2-pro-thumb.png" alt="SP 1">
-          <h3> Tai nghe Bluetooth True wireless</h3>
-          <p class="">1.490.000đ <span class=" sale"><del>1.090.000đ </del></span></p>
-          <br> <a href=""><button class="button">Xem</button></a>
-        </div>
-        
-        <div class="product-card">
-            <span class="discount-label">Giảm 45%</span>
-          <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/1/5/15_2_7_2_5.jpg" alt="SP 1">
-          <h3> Đồng hồ thông minh Huawei Ưatch GT5 </h3>
-          <p class="">4.490.000đ <span class=" sale"><del>5.390.000đ </del></span></p>
-          <br> <a href=""><button class="button">Xem</button></a>
-        </div>
-        <div class="product-card">
-            <span class="discount-label">Giảm 45%</span>
-            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/5/5/55_1_1.png" alt="SP 1">
-            <h3> Tivi Xiaomi A Pro 4k 55 inch </h3>
-            <p class="">12.490.000đ <span class=" sale"><del>11.390.000đ </del></span></p>
-            <br> <a href=""><button class="button">Xem</button></a>
-          </div>
-          <div class="product-card">
-            <span class="discount-label">Giảm 45%</span>
-            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/f/r/frame_166_3.png" alt="SP 1">
-            <h3> Samsung Galaxy Z Filip </h3>
-            <p class="">12.490.000đ <span class=" sale"><del>11.390.000đ </del></span></p>
-            <br> <a href=""><button class="button">Xem</button></a>
-          </div>
-          <div class="product-card">
-            <span class="discount-label">Giảm 45%</span>
-            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/m/image_1396_1.png" alt="SP 1">
-            <h3> Apple MacBook Air M2 2024 </h3>
-            <p class="">12.490.000đ <span class=" sale"><del>11.390.000đ </del></span></p>
-            <br> <a href=""><button class="button">Xem</button></a>
-          </div>
-          <div class="product-card">
-            <span class="discount-label">Giảm 45%</span>
-            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/6/5/65578dfv.png" alt="SP 1">
-            <h3> Smart Tivi NanoCell LG 4K </h3>
-            <p class="">12.490.000đ <span class=" sale"><del>11.390.000đ </del></span></p>
-            <br> <a href=""><button class="button">Xem</button></a>
-          </div>
-        
-        </div>
+            <footer class="footer">
+                <div>
+                    <h4>📞 Thông tin liên hệ</h4>
+                    <p>Mua hàng - Bảo hành: 1800.2097 (7h30 - 22h00)</p>
+                    <p>CSKH - Khiếu nại: 1800.2063 (8h00 - 21h30)</p>
+                    <p>Email: lienhe@shopdientu.vn</p>
+                </div>
 
+                <div class="footer2">
+                    <h4>👍 FANPAGE</h4>
+                    <a href="#"><img src="anhcuatuan/download.png" alt=""></a>
+                    <a href="#"><img src="anhcuatuan/you.jpg" alt=""></a>
+                    <a href="#"><img src="anhcuatuan/instar.jpg" alt=""></a>
+                    <a href="#"><img src="anhcuatuan/tt.jpg" alt=""></a>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div >
-        <h4>📞 Thông tin liên hệ</h4>
-        <a href="#"><p>Mua hàng - Bảo hành: 1800.2097 (7h30 - 22h00)</p></a>
-        <a href="#"><p>CSKH - Khiếu nại: 1800.2063 (8h00 - 21h30)</p></a>
-        <a href="#"><p>Email: lienhe@shopdientu.vn</p></a>
-      </div>
+                </div>
 
-      <div class="footer2">
-        <h4>👍 FANPAGE</h4>
-        <a href="#"><img src="anhhtml/download.png" alt=""></a>
-        <a href="#"><img src="anhhtml/you.jpg" alt=""></a>
-        <a href="#"><img src="anhhtml/instar.jpg" alt=""></a>
-        <a href="#"><img src="anhhtml/tt.jpg" alt=""></a>
+                <div>
+                    <h4>🏢 Chi nhánh / Cơ sở</h4>
+                    <p>TP. Hồ Chí Minh</p>
+                    <p>Hà Nội</p>
+                    <p>Đà Nẵng</p>
+                    <p>Hải Phòng</p>
+                </div>
+                <div class="footer2">
+                    <center>
+                        <h4>💳 Phương thức thanh toán</h4>
+                        <a href="#"><img src="anhcuatuan/one pay.jpg" alt=""></a>
+                        <a href="#"><img src="anhcuatuan/zalopay.jpg" alt=""></a>
+                        <a href="#"><img src="anhcuatuan/vnpay.jpg" alt=""></a>
+                        <a href="#"><img src="anhcuatuan/momo.jpg" alt=""></a>
 
-      </div>
-
-      <div>
-        <h4>🏢 Chi nhánh / Cơ sở</h4>
-        <a href="#"><p>CS1.TP. Hồ Chí Minh</p></a>
-        <a href="#"><p>CS2.Hà Nội</p></a>
-        <a href="#"><p>CS3.Đà Nẵng</p></a>
-        <a href="#"><p>CS4.Hải Phòng</p></a>
-        <a href="#"><p>CS5.Thanh Hóa</p></a>
-      </div>
-      <div class="footer2">
-        <center>
-          <h4>💳 Phương thức thanh toán</h4>
-          <a href="#"><img src="anhhtml/one pay.jpg" alt=""></a>
-          <a href="#"><img src="anhhtml/vnpay.jpg" alt=""></a>
-          <a href="#"><img src="anhhtml/momo.jpg" alt=""></a>
-          <a href="#"><img src="anhhtml/zalopay.jpg" alt=""></a>
-        </center>
-
-
-      </div>
-    </footer>
-
-  </div>
-</body>
+                    </center>
+                </div>
+            </footer>
+        </body>
 
 </html>
