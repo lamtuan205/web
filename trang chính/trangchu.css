@@ -229,6 +229,10 @@ body {
     width: 100%;
     border-radius: 8px;
     }
+    .product-card:hover img {
+        transition: transform 0.5s ease;
+        transform: scale(1.1);  /* Phóng to hình ảnh khi hover */
+      }
    
     .product-card h3 {
     margin: 10px 0;
