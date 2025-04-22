@@ -9,92 +9,88 @@
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header class="main-header">
-        <a href="../trang chính/trang chính.html" class="logo">
-            <img src="anhcuatuan/logo.jpg" alt="Logo">
-        </a>
-
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">Ưu Đãi</a></li>
-                <li><a href="#">Di động</a></li>
-                <li><a href="#">TV & AV</a></li>
-                <li><a href="#">Gia Dụng</a></li>
-                <li><a href="#">IT</a></li>
-                <li><a href="#">Máy ảnh</a></li>
-                <li><a href="#">Đồng hồ</a></li>
-                <li><a href="#">Tai nghe</a></li>
-            </ul>
-        </nav>
-
-        <div class="header-right">
-            <a href="#" class="support">Hỗ Trợ</a>
-            <a href="#" class="business">For Business</a>
-
-            <div class="search-box">
-                <input type="text" placeholder="Tìm kiếm">
-                <i class="icon-search">🔍</i>
+    <div class="container">
+        <!-- Header -->
+        <header class="main-header">
+            <div>
+                <h2 class="logom"><b>DTB SHOP</b></h2>
             </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Cửa hàng</a></li>
+                    <li><a href="#">Ưu Đãi</a></li>
+                    <li><a href="#">Giải trí</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Phụ kiện</a></li>
+                </ul>
+            </nav>
 
-            <div class="giohang">
-                <a href="#"><img src="anhcuatuan/shopping-cart.png" alt="Cart"></a>
-            </div>
+            <div class="header-right">
+                <a href="#" class="support">Hỗ Trợ</a>
+                <a href="#" class="business">For Business</a>
 
-            <a href="../tuấn/đăng nhập.html" class="login-btn">Đăng nhập</a>
+                <div class="search-box">
+                    <input type="text" placeholder="Tìm kiếm">
+                    <i class="icon-search">🔍</i>
+                </div>
+
+                <div class="giohang">
+                    <a href=""><img src="anhcuatuan/shopping-cart.png" alt=""></a>
+                </div>
+                <a href="../tuấn/đăng nhập.html" class="business">Đăng nhập</a>
+
+
+        </header>
+        <!-- FORM ĐĂNG KÝ -->
+        <div class="container2">
+            <h2>Tạo tài khoản của bạn</h2>
+            <form>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Mật khẩu</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" name="password" required>
+                    <span class="eye">👁️</span>
+                </div>
+
+                <label for="confirm-password">Xác nhận mật khẩu</label>
+                <div class="password-wrapper">
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <span class="eye">👁️</span>
+                </div>
+
+                <label for="lastname">Họ</label>
+                <input type="text" id="lastname" name="lastname">
+
+                <label for="firstname">Tên</label>
+                <input type="text" id="firstname" name="firstname">
+
+                <label>Ngày sinh</label>
+                <div class="dob">
+                    <input type="text" placeholder="Ngày" name="day">
+                    <select name="month">
+                        <option disabled selected>Tháng</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                    <input type="text" placeholder="Năm" name="year">
+                </div>
+                <div class="dangky">
+                    <a href="../trang chính/trang chính.html" class="form-submit">Đăng ký</a>
+                </div>
+            </form>
         </div>
-    </header>
-
-    <!-- FORM ĐĂNG KÝ -->
-    <div class="container2">
-        <h2>Tạo tài khoản của bạn</h2>
-        <form>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="password">Mật khẩu</label>
-            <div class="password-wrapper">
-                <input type="password" id="password" name="password" required>
-                <span class="eye">👁️</span>
-            </div>
-
-            <label for="confirm-password">Xác nhận mật khẩu</label>
-            <div class="password-wrapper">
-                <input type="password" id="confirm-password" name="confirm-password" required>
-                <span class="eye">👁️</span>
-            </div>
-
-            <label for="lastname">Họ</label>
-            <input type="text" id="lastname" name="lastname">
-
-            <label for="firstname">Tên</label>
-            <input type="text" id="firstname" name="firstname">
-
-            <label>Ngày sinh</label>
-            <div class="dob">
-                <input type="text" placeholder="Ngày" name="day">
-                <select name="month">
-                    <option disabled selected>Tháng</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
-                </select>
-                <input type="text" placeholder="Năm" name="year">
-            </div>
-            <div class="dangky">
-                <a href="../trang chính/trang chính.html" class="form-submit">Đăng ký</a>
-            </div>
-        </form>
-    </div>
 </body>
 
 </html>

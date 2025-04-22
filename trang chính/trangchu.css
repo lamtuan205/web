@@ -33,6 +33,7 @@ body {
     width: 100%;
     z-index: 1000;
 }
+
 .logom {
     color: rgb(7, 243, 243);
     font-weight: bold;
@@ -52,7 +53,7 @@ body {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    
+
 }
 
 .header-right {
@@ -188,7 +189,7 @@ body {
     width: 100%;
 }
 
-.product-contaniner{
+.product-contaniner {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -198,9 +199,11 @@ body {
     padding: 0;
     background-color: #ffffff;
     cursor: pointer;
-  }
-  .product-card {
-    position: relative; /* thêm dòng này để làm gốc định vị cho label */
+}
+
+.product-card {
+    position: relative;
+    /* thêm dòng này để làm gốc định vị cho label */
     background-color: #ffffff;
     border: 1px solid #a1a1a1;
     border-radius: 8px;
@@ -208,11 +211,12 @@ body {
     width: 270px;
     text-align: center;
     padding: 15px;
-    overflow: hidden; /* nếu label vượt ra ngoài vẫn hiển thị đẹp */
-  }
-  
-  /* Nhãn giảm giá */
-  .discount-label {
+    overflow: hidden;
+    /* nếu label vượt ra ngoài vẫn hiển thị đẹp */
+}
+
+/* Nhãn giảm giá */
+.discount-label {
     position: absolute;
     top: 0;
     left: 0;
@@ -224,61 +228,63 @@ body {
     border-top-left-radius: 6px;
     border-bottom-right-radius: 6px;
     z-index: 1;
-  }
-    
-    .product-card:hover{
-    transform: translateY(-5px);
-    }
+}
 
-    .product-card img {
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
     width: 100%;
     border-radius: 8px;
-    }
-    .product-card:hover img {
-        transition: transform 0.5s ease;
-        transform: scale(1.1);  /* Phóng to hình ảnh khi hover */
-      }
-   
-    .product-card h3 {
+}
+
+.product-card:hover img {
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+    /* Phóng to hình ảnh khi hover */
+}
+
+.product-card h3 {
     margin: 10px 0;
     font-size: 16px;
-    }
+}
 
-    .product-card p {
-    font-size: 14px;  
+.product-card p {
+    font-size: 14px;
     color: #000000;
-    }
- 
-    .sale {   
+}
+
+.sale {
     color: red;
     font-weight: bold;
-    }
+}
 
-    .button {
-        background-color: #ffffff;
-        color: #181010;
-        padding: 10px 15px;
-        border: #181010 solid 1px;
-        border-radius: 5px ;
-        cursor: pointer;
-        transition-duration: 1s;
-    }
+.button {
+    background-color: #ffffff;
+    color: #181010;
+    padding: 10px 15px;
+    border: #181010 solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
 
-    .button:hover {
+.button:hover {
     background-color: #d4dfff;
     color: #181010;
-    }
+}
 
-    .footer {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-        background: #3c4147;
-        color: white;
-        padding: 30px 20px;
-        border-radius: 10px;
-        margin-top: 40px;
-    }
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    background: #3c4147;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
 
 .footer div {
     font-size: 14px;
@@ -304,7 +310,7 @@ body {
     transition: color 0.3s;
 }
 
-.footer :hover{
+.footer :hover {
     color: #00a6ff;
 }
 
@@ -372,17 +378,16 @@ h3 {
     cursor: pointer;
     text-decoration: none;
     /* loại bỏ gạch chân */
-  }
+}
 
-  .login-btn:hover {
+.login-btn:hover {
     text-decoration: underline;
-  }
+}
 
-  .giohang img {
+.giohang img {
     width: 20px;
     height: 20px;
     object-fit: contain;
     display: inline-block;
 
 }
- 

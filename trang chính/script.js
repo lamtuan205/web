@@ -24,6 +24,7 @@ function updateSlider() {
     const offset = -currentIndex * 100; // Chuyển động dựa trên chỉ số
     slider.style.transform = `translateX(${offset}%)`;
 }
+/* This is a comment */
 
 // Tự động chuyển hình mỗi 3 giây
 setInterval(showNextSlide, 3000);
