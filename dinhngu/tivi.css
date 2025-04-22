@@ -26,6 +26,11 @@ body {
     padding: 10px 30px;
     background-color: rgb(233, 233, 233);
     font-family: sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logom {
@@ -101,6 +106,7 @@ body {
     justify-content: center;
     margin: 20px 0;
     gap: 10px;
+    margin-top: 70px;
 }
 
 .categories button {
