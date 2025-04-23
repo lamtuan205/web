@@ -1,0 +1,471 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f6fa;
+
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+.logo img {
+    height: 30px;
+    width: 100px;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.support,
+.business {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 5px;
+}
+
+.icon-search,
+.icon-cart,
+.icon-user {
+    font-size: 18px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Category section */
+/* Container layout */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* Căn giữa phần tử trong container */
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+    max-height: 50px;
+  }
+  
+  .categories button {
+    padding: 10px 16px;
+    background: #e0f2fe;
+    border: none;
+    border-radius: 6px;
+    color: #0369a1;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    max-height: 30px;
+  }
+  
+  .categories button:hover {
+    background: #bae6fd;
+  }
+
+/* Điều chỉnh thêm cho hiệu ứng hover */
+.categories button:active {
+    background-color: #003366;  /* Màu khi nhấn nút */
+}
+
+/* Adjust the layout of the container */
+.container {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: white;
+    width: 100%; /* Đảm bảo phần header chiếm hết chiều rộng màn hình */
+    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến chiều rộng */
+}
+
+.logo img {
+    width: 100px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px; /* Thêm khoảng cách giữa các mục trong thanh điều hướng */
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Thêm khoảng cách giữa các phần tử */
+}
+
+.support, .business {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px;
+}
+
+.icon-search {
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10px; /* Thêm khoảng cách giữa biểu tượng tìm kiếm và ô nhập */
+}
+
+.giohang img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.login-btn {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    text-decoration: underline;
+}
+
+/* Category section */
+
+/* Container layout */
+.container {
+    display: flex;
+    gap: 30px;  /* Thêm khoảng cách giữa các phần tử */
+    padding: 30px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    flex-wrap: wrap;  /* Cho phép các phần tử tự động xuống dòng nếu cần */
+}
+
+/* Brands section */
+.brands {
+    flex: 0 0 250px;  /* Điều chỉnh phần brands chiếm không gian cố định */
+    background: #fff;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-height: 600px;
+    overflow-y: auto;
+    float: left;
+    width: 300px;
+}
+
+.brands h2 {
+    font-size: 22px;  /* Tăng kích thước font chữ */
+    font-weight: bold;  /* Làm cho chữ đậm hơn */
+    color: #333;  /* Màu chữ tối hơn để nổi bật hơn */
+    text-align: center;  /* Căn giữa chữ */
+    margin-bottom: 20px;  /* Thêm khoảng cách dưới chữ */
+    letter-spacing: 1px;  /* Tăng khoảng cách giữa các chữ */
+}
+
+
+.filter {
+    margin-bottom: 15px;
+}
+
+.filter label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.filter select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.brand-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    height: 100px;
+    text-align: center;
+}
+
+.brand-item:hover {
+    background: #e0e0e0;
+}
+
+.brand-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.brand-item span {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+}
+
+.view-more {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-more:hover {
+    background: #218838;
+}
+
+/* Products section */
+/* Products section */
+.products {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    
+}
+
+.product {
+    background: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;  /* Thêm hiệu ứng mượt mà khi hover */
+}
+
+.product:hover {
+    transform: scale(1.05);  /* Tăng kích thước sản phẩm khi di chuột vào */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);  /* Thêm bóng đổ khi hover */
+    transition: all 0.3s ease;
+}
+
+.product img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Thêm hiệu ứng cho ảnh */
+}
+
+.product:hover img {
+    transform: scale(1.1);  /* Phóng to hình ảnh khi hover */
+}
+
+.product h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Giá cũ */
+.old {
+    color: gray;
+    text-decoration: line-through;  /* Tạo hiệu ứng gạch bỏ cho giá cũ */
+    font-size: 14px;
+    transition: color 0.3s ease, transform 0.3s ease;  /* Thêm hiệu ứng mượt mà */
+}
+
+.product:hover .old {
+    color: red; /* Khi hover giá cũ sẽ chuyển màu đỏ */
+    transform: scale(1.1);  /* Khi hover, giá cũ sẽ phóng to một chút */
+}
+
+/* Giá mới */
+.new {
+    color: #d00;  /* Giá mới có màu đỏ */
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;  /* Thêm hiệu ứng mượt mà */
+}
+
+.product:hover .new {
+    color: #007bff; /* Khi hover giá mới sẽ chuyển sang màu xanh */
+    transform: scale(1.1);  /* Khi hover, giá mới sẽ phóng to một chút */
+}
+
+.meta {
+    color: #555;
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+.product button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background: #0056b3;
+}
+
+
+/* Footer */
+/* Footer */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    background: #1f2937;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+
+}
+
+.footer div {
+    font-size: 14px;
+}
+
+.footer h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.footer p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #e5e7eb;
+
+}
+
+.footer a {
+    color: #60a5fa;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #93c5fd;
+}
+
+.footer2 img {
+    width: 30x;
+    height: 30px;
+    margin: 5px;
+}
+
+/* Responsive: chia thành 1 cột trên màn nhỏ */
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer div {
+        margin-bottom: 20px;
+    }
+}
+
+
