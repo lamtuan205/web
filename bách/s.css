@@ -24,11 +24,16 @@ body {
 .main-header {
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Phân bố đều các phần tử từ trái sang phải */
-    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
-    padding: 10px 20px; /* Thêm khoảng cách bên trong */
-    background-color: #fff; /* Màu nền trắng */
-    box-sizing: border-box; /* Đảm bảo chiều rộng tính luôn cả padding */
+    justify-content: space-between;
+    /* Phân bố đều các phần tử từ trái sang phải */
+    align-items: center;
+    /* Căn giữa các phần tử theo chiều dọc */
+    padding: 10px 20px;
+    /* Thêm khoảng cách bên trong */
+    background-color: #fff;
+    /* Màu nền trắng */
+    box-sizing: border-box;
+    /* Đảm bảo chiều rộng tính luôn cả padding */
 }
 
 .main-header .logo img {
@@ -40,7 +45,8 @@ body {
 .main-nav ul {
     display: flex;
     list-style: none;
-    gap: 30px; /* Thêm khoảng cách giữa các mục trong thanh điều hướng */
+    gap: 30px;
+    /* Thêm khoảng cách giữa các mục trong thanh điều hướng */
 }
 
 .main-nav a {
@@ -52,7 +58,8 @@ body {
 .header-right {
     display: flex;
     align-items: center;
-    gap: 20px; /* Thêm khoảng cách giữa các phần tử trong header */
+    gap: 20px;
+    /* Thêm khoảng cách giữa các phần tử trong header */
 }
 
 .main-nav ul {
@@ -66,15 +73,18 @@ body {
     color: black;
     font-weight: bold;
 }
+
 .giohang {
-    font-size: 16px;  /* Điều chỉnh lại kích thước chữ của giỏ hàng */
+    font-size: 16px;
+    /* Điều chỉnh lại kích thước chữ của giỏ hàng */
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
 .giohang img {
-    width: 25px;  /* Thay đổi kích thước của icon giỏ hàng */
+    width: 25px;
+    /* Thay đổi kích thước của icon giỏ hàng */
     height: 25px;
     object-fit: contain;
 }
@@ -85,6 +95,7 @@ body {
     align-items: center;
     gap: 15px;
 }
+
 .categories {
     display: flex;
     flex-wrap: wrap;
@@ -107,6 +118,7 @@ body {
 .categories button:hover {
     background: #bae6fd;
 }
+
 /* Navigation links */
 .nav-links {
     display: flex;
@@ -129,7 +141,8 @@ body {
     gap: 10px;
 }
 
-.btn-register, .btn-login {
+.btn-register,
+.btn-login {
     padding: 10px 20px;
     background-color: #f00;
     color: white;
@@ -139,7 +152,8 @@ body {
     transition: background-color 0.3s;
 }
 
-.btn-register:hover, .btn-login:hover {
+.btn-register:hover,
+.btn-login:hover {
     background-color: #c00;
 }
 
@@ -214,8 +228,11 @@ body {
 .news-section {
     margin: 40px 0;
 }
-.news-section .news-title, .news-section .excerpt {
-    color: black; /* Màu đen cho chữ để dễ đọc hơn */
+
+.news-section .news-title,
+.news-section .excerpt {
+    color: black;
+    /* Màu đen cho chữ để dễ đọc hơn */
 }
 
 .section-title {
@@ -252,7 +269,8 @@ body {
     flex: 1;
 }
 
-.news-title, .news-item h4 {
+.news-title,
+.news-item h4 {
     font-size: 18px;
     font-weight: bold;
     color: #333;
@@ -384,6 +402,7 @@ body {
     color: black;
     font-weight: bold;
 }
+
 body {
     height: 100%;
     width: 100%;
@@ -516,4 +535,12 @@ h3 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     transition: transform 0.2s;
+}
+
+
+.logom {
+    color: rgb(7, 243, 243);
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgb(32, 22, 22);
+    cursor: pointer;
 }
