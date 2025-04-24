@@ -95,31 +95,6 @@ body {
 
 
 
-
-.categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px 0;
-    gap: 10px;
-    margin-top: 70px;
-}
-
-.categories button {
-    padding: 10px 16px;
-    background: #e0f2fe;
-    border: none;
-    border-radius: 6px;
-    color: #0369a1;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.categories button:hover {
-    background: #bae6fd;
-}
-
 .main-content {
     display: flex;
     gap: 20px;
@@ -194,4 +169,10 @@ body {
     object-fit: contain;
     display: inline-block;
 
+}
+
+.chu {
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
