@@ -4,48 +4,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop Bán Đồ Điện Tử</title>
+  <title>Giỏ Hàng - DTB SHOP</title>
   <link rel="stylesheet" href="10.css">
+
+
 </head>
 
 <body>
   <div class="container">
-    <!-- Header -->
+    <!-- Header (reused from trangchu.html) -->
     <header class="main-header">
       <div>
         <h2 class="logom"><b>DTB SHOP</b></h2>
       </div>
       <nav class="main-nav">
         <ul>
-          <li><a href="#">Cửa hàng</a></li>
+          <li><a href="trangchu.html">Cửa hàng</a></li>
           <li><a href="#">Ưu Đãi</a></li>
           <li><a href="#">Giải trí</a></li>
           <li><a href="#">Tin tức</a></li>
           <li><a href="#">Phụ kiện</a></li>
         </ul>
       </nav>
-
       <div class="header-right">
-        <a href="#" class="support">Hỗ Trợ</a>
+        <a href="../tuấn/Hỗ trợ.html" class="support">Hỗ Trợ</a>
         <a href="#" class="business">For Business</a>
-
         <div class="search-box">
           <input type="text" placeholder="Tìm kiếm">
           <i class="icon-search">🔍</i>
         </div>
-
-
-
-        <div class="giohang">
-          <a href=""><img src="anhhtml/shopping-cart.png" alt=""></a>
+        <div class="giohang relative">
+          <img src="../trang chính/anhhtml/shopping-cart.png" alt="">
+          <span id="cart-count"
+            style="position: absolute; top: -8px; right: -10px; background: red; color: white; font-size: 12px; padding: 2px 6px; border-radius: 50%;">0</span>
+          <div id="cart-preview" style="display: none;">
+            <h4>🛒 Giỏ hàng</h4>
+            <ul id="cart-items-list" style="max-height: 300px; overflow-y: auto; font-size: 14px;"></ul>
+          </div>
         </div>
-
-        <a href="../tuấn/đăng nhập.html" class="business">Đăng nhập</a><br>
+        <a href="../tuấn/đăng nhập.html" class="business">Đăng nhập</a>
+      </div>
     </header>
-    <div><br><br><br><br><br>
-      <p class="chu">Ưu đãi độc quyền chỉ dành cho Sinh viên và ngành Giáo dục ->Đăng ký ngay</p>
+    <br><br><br><br><br><br><br>
+    <!-- Cart Page Content -->
+    <div class="cart-page">
+      <h2>Giỏ Hàng Của Bạn</h2>
+      <table class="cart-table" id="cart-table">
+        <thead>
+          <tr>
+            <th>Sản phẩm</th>
+            <th>Đơn giá</th>
+            <th>Số lượng</th>
+            <th>Tổng</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="cart-table-body">
+          <!-- Cart items will be dynamically inserted here -->
+        </tbody>
+      </table>
+      <div class="empty-cart" id="empty-cart" style="display: none;">
+        Giỏ hàng của bạn đang trống. <a href="trangchu.html">Tiếp tục mua sắm</a>
+      </div>
+      <div class="cart-summary">
+        <div>
+          <h3>Tổng cộng</h3>
+          <p>Tổng tiền: <span id="cart-total">0₫</span></p>
+          <button class="checkout-btn">Thanh toán</button>
+        </div>
+      </div>
     </div>
-    <!-- Footer -->
+
+    <!-- Footer (reused from trangchu.html) -->
     <footer class="footer">
       <div>
         <h4>📞 Thông tin liên hệ</h4>
@@ -56,19 +86,17 @@
           <p>CSKH - Khiếu nại: 1800.2063 (8h00 - 21h30)</p>
         </a>
         <a href="#">
-          <p>Email: lienhe@shopdientu.vn</p>
+          <p>Email: <span class="__cf_email__"
+              data-cfemail="7d1114181315183d0e15120d191418130908530b13">[email&#160;protected]</span></p>
         </a>
       </div>
-
       <div class="footer2">
         <h4>👍 FANPAGE</h4>
         <a href="#"><img src="anhhtml/download.png" alt=""></a>
         <a href="#"><img src="anhhtml/you.jpg" alt=""></a>
         <a href="#"><img src="anhhtml/instar.jpg" alt=""></a>
         <a href="#"><img src="anhhtml/tt.jpg" alt=""></a>
-
       </div>
-
       <div>
         <h4>🏢 Chi nhánh / Cơ sở</h4>
         <a href="#">
@@ -95,12 +123,12 @@
           <a href="#"><img src="anhhtml/momo.jpg" alt=""></a>
           <a href="#"><img src="anhhtml/zalopay.jpg" alt=""></a>
         </center>
-
-
       </div>
     </footer>
-
   </div>
+
+  <script src="script.js"></script>
+
 </body>
 
 </html>
