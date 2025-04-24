@@ -30,6 +30,10 @@ body {
 
 }
 
+.main-header a {
+    text-decoration: none;
+}
+
 .logom {
     color: rgb(7, 243, 243);
     font-weight: bold;
