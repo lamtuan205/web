@@ -459,3 +459,40 @@ h3 {
     transform: translateY(0);
     pointer-events: auto;
 }
+
+/* Định dạng mục trong giỏ hàng */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.cart-item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #333;
+}
+
+.cart-item-info span:first-child {
+    font-weight: bold;
+}
+
+.cart-item-info span:last-child {
+    color: #0369a1;
+}
+
+#cart-items-list li:last-child .cart-item {
+    border-bottom: none;
+}

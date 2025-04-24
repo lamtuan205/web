@@ -76,8 +76,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const li = document.createElement('li');
             li.innerHTML = `
-                <span>${item.name} x${item.quantity} - ${(item.price * item.quantity).toLocaleString('vi-VN')}₫</span>
-                <button class="remove-item" data-index="${index}">Xóa</button>
+                <div class="cart-item">
+                    <img src="${item.image}" alt="${item.name}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px; margin-right: 10px;">
+                    <div class="cart-item-info">
+                        <span>${item.name} x${item.quantity}</span>
+                        <span>${(item.price * item.quantity).toLocaleString('vi-VN')}₫</span>
+                    </div>
+                    <button class="remove-item" data-index="${index}">Xóa</button>
+                </div>
             `;
             cartItemsList.appendChild(li);
         });
