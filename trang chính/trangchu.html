@@ -20,7 +20,7 @@
           <li><a href="#">Cửa hàng</a></li>
           <li><a href="#">Ưu Đãi</a></li>
           <li><a href="#">Giải trí</a></li>
-          <li><a href="#">Tin tức</a></li>
+          <li><a href="../bách/s.html">Tin tức</a></li>
           <li><a href="#">Phụ kiện</a></li>
         </ul>
       </nav>
@@ -38,12 +38,12 @@
           <img src="anhhtml/shopping-cart.png" alt="">
           <span id="cart-count"
             style="position: absolute; top: -8px; right: -10px; background: red; color: white; font-size: 12px; padding: 2px 6px; border-radius: 50%;">0</span>
-
-          <div id="cart-preview"
-            style="display: none; position: absolute; top: 30px; right: 0; width: 300px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 10px; z-index: 2000;">
-            <h4 style="margin-bottom: 10px;">🛒 Sản phẩm đã thêm:</h4>
-            <ul id="cart-items-list" style="max-height: 200px; overflow-y: auto; font-size: 14px;"></ul>
-            <div style="margin-top: 10px; text-align: right;">
+        
+          <div id="cart-preview">
+            <h4>🛒 Sản phẩm đã thêm:</h4>
+            <ul id="cart-items-list"></ul>
+            
+            <div class="cart-total-container">
               <strong>Tổng: </strong><span id="cart-total">0₫</span>
             </div>
           </div>
@@ -64,7 +64,9 @@
     <script src="script.js"></script>
     <!-- Categories -->
     <nav class="categories">
-      <button>Điện thoại</button>
+      <div >
+        <a href="../bách/dt.html" class="login-btn"> <button>Điện thoại</button></a>
+      </div>
       <button>Laptop</button>
       <button>Máy tính</button>
       <div>
@@ -78,7 +80,9 @@
       </div>
       <button>Loa</button>
       <button>Tablet</button>
-      <button>Tai nghe</button>
+      <div >
+        <a href="../bách/tainghe1.html" class="login-btn"> <button>Tai nghe</button></a>
+      </div>
     </nav>
 
     <div class="sanpham">

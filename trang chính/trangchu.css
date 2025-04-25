@@ -361,83 +361,11 @@ h3 {
     display: inline-block;
 }
 
-/* Updated Cart Preview Styles */
-#cart-preview {
-    position: absolute;
-    top: 40px;
-    right: 0;
-    width: 350px;
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-    padding: 20px;
-    z-index: 2000;
-    transition: all 0.3s ease;
-}
-
-#cart-preview h4 {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-#cart-items-list {
-    max-height: 300px;
-    overflow-y: auto;
-    margin-bottom: 15px;
-    padding: 0;
-    list-style: none;
-}
-
-#cart-items-list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-    font-size: 14px;
-    color: #333;
-}
-
-#cart-items-list li:last-child {
-    border-bottom: none;
-}
-
-#cart-items-list li button.remove-item {
-    background: #ff4d4d;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 12px;
-    transition: background 0.3s;
-}
-
-#cart-items-list li button.remove-item:hover {
-    background: #cc0000;
-}
-
-#cart-preview .cart-total-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    margin-top: 15px;
-    padding-top: 10px;
-    border-top: 1px solid #eee;
-}
-
 
 .giohang {
     position: relative;
 }
-
+/* Cart preview styles */
 #cart-preview {
     position: absolute;
     top: 40px;
@@ -460,11 +388,35 @@ h3 {
     pointer-events: auto;
 }
 
-/* Định dạng mục trong giỏ hàng */
-.cart-item {
+#cart-preview h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
+    gap: 10px;
+}
+
+#cart-items-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+/* Each item in the cart */
+#cart-items-list li {
+    padding: 0;
+    margin: 0;
+}
+
+/* Cart item layout */
+.cart-item {
+    display: flex;
+    align-items: flex-start;
     justify-content: space-between;
+    gap: 10px;
     padding: 10px 0;
     border-bottom: 1px solid #eee;
 }
@@ -474,7 +426,6 @@ h3 {
     height: 50px;
     object-fit: cover;
     border-radius: 4px;
-    margin-right: 10px;
 }
 
 .cart-item-info {
@@ -483,16 +434,50 @@ h3 {
     flex-direction: column;
     font-size: 14px;
     color: #333;
+    overflow: hidden;
 }
 
 .cart-item-info span:first-child {
     font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .cart-item-info span:last-child {
     color: #0369a1;
+    font-size: 13px;
+    margin-top: 4px;
 }
 
-#cart-items-list li:last-child .cart-item {
-    border-bottom: none;
+/* Xóa button */
+.cart-item .remove-item {
+    flex-shrink: 0;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.3s;
+    height: fit-content;
+    align-self: flex-start;
+}
+
+.cart-item .remove-item:hover {
+    background: #cc0000;
+}
+
+/* Tổng tiền */
+.cart-total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
 }
