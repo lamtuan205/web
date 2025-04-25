@@ -26,7 +26,7 @@
       </nav>
 
       <div class="header-right">
-        <a href="#" class="support">Hỗ Trợ</a>
+        <a href="../tuấn/Hỗ trợ.html" class="support">Hỗ Trợ</a>
         <a href="#" class="business">For Business</a>
 
         <div class="search-box">
@@ -34,13 +34,23 @@
           <i class="icon-search">🔍</i>
         </div>
 
+        <div class="giohang relative">
+          <img src="anhhtml/shopping-cart.png" alt="">
+          <span id="cart-count"
+            style="position: absolute; top: -8px; right: -10px; background: red; color: white; font-size: 12px; padding: 2px 6px; border-radius: 50%;">0</span>
 
-
-        <div class="giohang">
-          <a href=""><img src="anhhtml/shopping-cart.png" alt=""></a>
+          <div id="cart-preview"
+            style="display: none; position: absolute; top: 30px; right: 0; width: 300px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 10px; z-index: 2000;">
+            <h4 style="margin-bottom: 10px;">🛒 Sản phẩm đã thêm:</h4>
+            <ul id="cart-items-list" style="max-height: 200px; overflow-y: auto; font-size: 14px;"></ul>
+            <div style="margin-top: 10px; text-align: right;">
+              <strong>Tổng: </strong><span id="cart-total">0₫</span>
+            </div>
+          </div>
         </div>
 
         <a href="../tuấn/đăng nhập.html" class="business">Đăng nhập</a>
+      </div>
     </header>
 
     <!-- trình chiếu hình ảnh-->
@@ -92,9 +102,8 @@
         <p class="">27.790.000đ <span class=" sale"><del>33.990.000đ </del></span></p>
         <br>
         <a href="#"><button class="button">Xem</button></a>
-        <button class="button add-to-cart" data-name="Samsung Galaxy S25 UItra" data-price="Giá sản phẩm">Thêm vào
+        <button class="button add-to-cart" data-name="Samsung Galaxy S25 UItra" data-price="27790000">Thêm vào
           giỏ</button>
-
       </div>
 
       <div class="product-card">
@@ -106,8 +115,7 @@
         <p class="">11.390.000đ <span class=" sale"><del>17.990.000đ </del></span></p>
         <br>
         <a href="#"><button class="button">Xem</button></a>
-        <button class="button add-to-cart" data-name="iPhone 13 128GB" data-price="Giá sản phẩm">Thêm vào giỏ</button>
-
+        <button class="button add-to-cart" data-name="iPhone 13 128GB" data-price="11390000">Thêm vào giỏ</button>
       </div>
 
       <div class="product-card">
@@ -119,9 +127,8 @@
         <p class="">17.090.000đ<span class=" sale"><del>21.390.000đ </del></span></p>
         <br>
         <a href="#"><button class="button">Xem</button></a>
-        <button class="button add-to-cart" data-name="Laptop Gaming Acer Nitro V" data-price="Giá sản phẩm">Thêm vào
+        <button class="button add-to-cart" data-name="Laptop Gaming Acer Nitro V" data-price="17090000">Thêm vào
           giỏ</button>
-
       </div>
 
       <div class="product-card">
@@ -133,8 +140,7 @@
         <p class="">14.790.000đ <span class=" sale"><del>15.090.000đ </del></span></p>
         <br>
         <a href="#"><button class="button">Xem</button></a>
-        <button class="button add-to-cart" data-name="Mac mini M4 2024" data-price="Giá sản phẩm">Thêm vào giỏ</button>
-
+        <button class="button add-to-cart" data-name="Mac mini M4 2024" data-price="14790000">Thêm vào giỏ</button>
       </div>
 
       <div class="product-card">
@@ -146,9 +152,8 @@
         <p class="">2.790.000đ <span class=" sale"><del>3.990.000đ </del></span></p>
         <br>
         <a href="#"><button class="button">Xem</button></a>
-        <button class="button add-to-cart" data-name="Màn hình Gaming LG UItraGear" data-price="Giá sản phẩm">Thêm vào
+        <button class="button add-to-cart" data-name="Màn hình Gaming LG UItraGear" data-price="2790000">Thêm vào
           giỏ</button>
-
       </div>
 
       <div class="product-card">
@@ -160,9 +165,8 @@
         <p class="">11.990.000đ <span class=" sale"><del>13.890.000đ </del></span></p>
         <br>
         <a href="#"><button class="button">Xem</button></a>
-        <button class="button add-to-cart" data-name="iPad Gen10 10.9 inch 2022 Wifi 64GB"
-          data-price="Giá sản phẩm">Thêm vào giỏ</button>
-
+        <button class="button add-to-cart" data-name="iPad Gen10 10.9 inch 2022 Wifi 64GB" data-price="11990000">Thêm
+          vào giỏ</button>
       </div>
 
       <div class="product-card">
@@ -174,9 +178,8 @@
         <p class="">1.490.000đ <span class=" sale"><del>1.090.000đ </del></span></p>
         <br>
         <a href="#"><button class="button">Xem</button></a>
-        <button class="button add-to-cart" data-name="Tai nghe Bluetooth True wireless" data-price="Giá sản phẩm">Thêm
-          vào giỏ</button>
-
+        <button class="button add-to-cart" data-name="Tai nghe Bluetooth True wireless" data-price="1490000">Thêm vào
+          giỏ</button>
       </div>
 
       <div class="product-card">
@@ -188,10 +191,10 @@
         <p class="">4.490.000đ <span class=" sale"><del>5.390.000đ </del></span></p>
         <br>
         <a href="#"><button class="button">Xem</button></a>
-        <button class="button add-to-cart" data-name="Đồng hồ thông minh Huawei watch GT5"
-          data-price="Giá sản phẩm">Thêm vào giỏ</button>
-
+        <button class="button add-to-cart" data-name="Đồng hồ thông minh Huawei watch GT5" data-price="4490000">Thêm vào
+          giỏ</button>
       </div>
+
       <div class="product-card">
         <span class="discount-label">Giảm 45%</span>
         <img
@@ -201,10 +204,10 @@
         <p class="">12.490.000đ <span class=" sale"><del>11.390.000đ </del></span></p>
         <br>
         <a href="#"><button class="button">Xem</button></a>
-        <button class="button add-to-cart" data-name="Tivi Xiaomi A Pro 4k 55 inch" data-price="Giá sản phẩm">Thêm vào
+        <button class="button add-to-cart" data-name="Tivi Xiaomi A Pro 4k 55 inch" data-price="12490000">Thêm vào
           giỏ</button>
-
       </div>
+
       <div class="product-card">
         <span class="discount-label">Giảm 45%</span>
         <img
@@ -214,10 +217,10 @@
         <p class="">12.490.000đ <span class=" sale"><del>11.390.000đ </del></span></p>
         <br>
         <a href="#"><button class="button">Xem</button></a>
-        <button class="button add-to-cart" data-name="Samsung Galaxy Z Filip" data-price="Giá sản phẩm">Thêm vào
+        <button class="button add-to-cart" data-name="Samsung Galaxy Z Filip" data-price="12490000">Thêm vào
           giỏ</button>
-
       </div>
+
       <div class="product-card">
         <span class="discount-label">Giảm 45%</span>
         <img
@@ -227,10 +230,10 @@
         <p class="">12.490.000đ <span class=" sale"><del>11.390.000đ </del></span></p>
         <br>
         <a href="#"><button class="button">Xem</button></a>
-        <button class="button add-to-cart" data-name="Apple MacBook Air M2 2024" data-price="Giá sản phẩm">Thêm vào
+        <button class="button add-to-cart" data-name="Apple MacBook Air M2 2024" data-price="12490000">Thêm vào
           giỏ</button>
-
       </div>
+
       <div class="product-card">
         <span class="discount-label">Giảm 45%</span>
         <img
@@ -239,14 +242,11 @@
         <h3> Smart Tivi NanoCell LG 4K </h3>
         <p class="">12.490.000đ <span class=" sale"><del>11.390.000đ </del></span></p>
         <br>
-        <a href="#"><button class="button">Xem</button></a>x
-        <button class="button add-to-cart" data-name="Smart Tivi NanoCell LG 4K" data-price="Giá sản phẩm">Thêm vào
+        <a href="#"><button class="button">Xem</button></a>
+        <button class="button add-to-cart" data-name="Smart Tivi NanoCell LG 4K" data-price="12490000">Thêm vào
           giỏ</button>
-
       </div>
-
     </div>
-
 
     <!-- Footer -->
     <footer class="footer">
@@ -269,7 +269,6 @@
         <a href="#"><img src="anhhtml/you.jpg" alt=""></a>
         <a href="#"><img src="anhhtml/instar.jpg" alt=""></a>
         <a href="#"><img src="anhhtml/tt.jpg" alt=""></a>
-
       </div>
 
       <div>
@@ -298,11 +297,8 @@
           <a href="#"><img src="anhhtml/momo.jpg" alt=""></a>
           <a href="#"><img src="anhhtml/zalopay.jpg" alt=""></a>
         </center>
-
-
       </div>
     </footer>
-
   </div>
 </body>
 
