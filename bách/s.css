@@ -32,14 +32,20 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
+   
 }
-
 .logom {
     color: rgb(7, 243, 243);
     font-weight: bold;
     text-shadow: 2px 2px 5px rgb(32, 22, 22);
     cursor: pointer;
 }
+
+.main-header a{
+    text-decoration: none;
+  }
+
+
 
 .main-nav ul {
     display: flex;
