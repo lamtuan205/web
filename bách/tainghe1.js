@@ -22,8 +22,11 @@ function nextSlide() {
   moveToSlide(slideIndex); // Gọi hàm trượt
 }
 
-// Tự động chuyển slide sau mỗi 4 giây
-setInterval(nextSlide, 3000);
+// Đảm bảo mã JS chỉ chạy khi DOM đã sẵn sàng
+document.addEventListener("DOMContentLoaded", function() {
+  // Tự động chuyển slide sau mỗi 3 giây
+  setInterval(nextSlide, 3000);
+});
 
 // Lấy tất cả các sản phẩm trong danh sách
 const products = document.querySelectorAll('.product');
