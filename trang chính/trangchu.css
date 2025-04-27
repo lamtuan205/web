@@ -22,7 +22,6 @@ body {
     justify-content: space-between;
     padding: 10px 30px;
     background-color: rgb(233, 233, 233);
-    font-family: sans-serif;
     position: fixed;
     top: 0;
     left: 0;
@@ -78,14 +77,6 @@ body {
     background: transparent;
     outline: none;
     padding: 5px;
-}
-
-.icon-search,
-.icon-cart,
-.icon-user {
-    font-size: 18px;
-    margin-left: 100px;
-    cursor: pointer;
 }
 
 .categories {
@@ -365,6 +356,7 @@ h3 {
 .giohang {
     position: relative;
 }
+
 /* Cart preview styles */
 #cart-preview {
     position: absolute;
@@ -480,4 +472,9 @@ h3 {
     margin-top: 15px;
     padding-top: 10px;
     border-top: 1px solid #eee;
+}
+
+.timkiem {
+    width: 15px;
+    height: 15px;
 }

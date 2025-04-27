@@ -188,7 +188,6 @@ body {
 }
 
 .cart-page h2 {
-    font-size: 24px;
     color: #333;
     margin-bottom: 20px;
     text-align: center;
@@ -306,4 +305,10 @@ body {
     padding: 50px;
     color: #666;
     font-size: 18px;
+}
+
+
+.timkiem {
+    width: 15px;
+    height: 15px;
 }
