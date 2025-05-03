@@ -41,6 +41,10 @@ body {
     cursor: pointer;
 }
 
+.main-header a {
+    text-decoration: none;
+}
+
 .main-nav ul {
     display: flex;
     list-style: none;
