@@ -41,9 +41,9 @@ body {
     cursor: pointer;
 }
 
-.main-header a{
+.main-header a {
     text-decoration: none;
-  }
+}
 
 .main-nav ul {
     display: flex;
@@ -76,7 +76,7 @@ body {
 
 .search-box {
     display: flex;
-    align-items: center;
+    align-items: left;
     background: #ffffff;
     border-radius: 20px;
     padding: 5px 10px;
@@ -146,6 +146,7 @@ body {
 .brand-item:hover {
     background: #e5e7eb;
 }
+
 .login-btn {
     font-weight: bold;
     font-size: 16px;
@@ -165,8 +166,8 @@ body {
     height: 20px;
     object-fit: contain;
     display: inline-block;
-
 }
+
 /* Category section */
 
 
